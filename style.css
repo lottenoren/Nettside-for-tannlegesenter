@@ -1,0 +1,90 @@
+html, body {
+    height:  100%;
+    margin:  0px auto;
+    padding: 0px auto;
+}
+html {
+    font-family: "PT Serif";
+}
+
+body {
+    background-color: rgb(255,252,254);
+    width: 100%;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 5px 20px;
+    background-image: url("images/star.png");
+    background-repeat: no-repeat;
+    background-position: left 12px;
+    background-size: 10px;
+}
+
+#header header {
+    text-align: center;
+    position: fixed;
+    background-color: lightpink;
+    width: 100%;
+    z-index: 5;
+  
+}
+
+.wrapper {
+    /* min-height: 100%;
+    height: auto; */
+    position: absolute;
+    margin-top: 125px;
+    /* z-index: 2; */
+}
+
+
+#footer footer {
+    background-color:pink;
+    height: 125px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+
+#big-head {
+    font-size: xx-large;
+}
+
+#navbar-container {
+    height: 30px;
+    /* border: 1px dashed black; */
+    display: flex;
+}
+
+.nav-btn {
+    border: 1px solid black;
+    flex: 1;
+    background-color:rgb(243, 89, 112);
+    /* z-index: 5; */
+}
+
+#footer footer img {
+    float: left;   
+    margin: 20px;
+    height: 100px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 200px;
+    gap: 10px 10px;
+    
+}
+
+.item {
+    border: 1px solid red;
+    /* width: fit-content; */
+}
+
+.item-1 {
+    grid-column: span 4;
+}

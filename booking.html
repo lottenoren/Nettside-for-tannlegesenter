@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+<style>
+    input[type="checkbox"] {
+        accent-color: pink; 
+    }
+    body {
+        background-color: rgba(255, 252, 254, 100);
+        font-family: PT serif;
+        width: 960px;
+        margin: 0 auto; 
+    }
+
+</style>
+<body>
+    <h1>Timebestilling</h1>
+    <p>Fyll inn informasjonen under for å bestille time;</p>
+    <form action="http://www.example.com/login.php" method="post">
+        <p>Fornavn: </br>
+        <input type="text" name="Fornavn" required="required" size="15" maxlength="60" />
+        </p><p>Etternavn: </br>
+        <input type="text" name="Etternavn" required="required" size="15" maxlength="30"
+        /></p> Adresse: </br>
+        <input type="text" name="Adresse" required="required" size="15" maxlength="30"
+        /></p> E-postadresse: </br>
+        <input type="email" name="E-postadresse" required="required" size="15" maxlength="30"
+        /></p> Telefon: </br>
+        <input type="text" name="Telefon" required="required" size="15" maxlength="30"
+        /></p> Dato: </br>
+        <input type="date" name="Dato" required="required" size="15" maxlength="30"
+        /></p>
+        <p> Vennligst velg ønsket tidsrom; <br />
+            <input type="checkbox" name="service" value="kl.09-10"/>Kl.09.00-10.00
+            <input type="checkbox" name="service" value="kl.09-10"/>Kl.10.00-11.00
+            <input type="checkbox" name="service" value="kl.09-10"/>Kl.11.00-11.45 <br />
+            <input type="checkbox" name="service" value="kl.09-10"/>Kl.12.30-13.00
+            <input type="checkbox" name="service" value="kl.09-10"/>Kl.13.00-14.00 
+            <input type="checkbox" name="service" value="kl.09-10"/>Kl.14.00-15.00</p>
+        <p>Hvilken behandling ønsker du;</p>
+        <select name="Behandlinger" placeholder="Velg behandling">
+            <option value=" "> </option>
+            <option value="General dental treatment"> General dental treatments</option>
+            <option value="Aesthetic treatments"> Aesthetic treatments</option>
+            <option value="Complex treatments"> Complex treatments</option>
+            <option value="Bite and dental position"> Bite and dental position</option>
+            <option value="Annet"> Annet</option>
+        </select>
+        <p>
+            <label for="Annen informasjon">Annen informasjon:</label><br />
+            <textarea rows="4" cols="40" id="comments"></textarea>
+        </p>
+        <input type="checkbox" name="service" value="Jeg har lest og godkjenner personvernerklæringen"/> 
+        Jeg har lest og godkjenner personvernerklæringen 
+        </br> </br>
+        <input type="submit" name="Sumbit" value="Sumbit"/>
+    </form>
+</body>
+</html>
